@@ -11,7 +11,7 @@ there are 3 ways to install Linux on windows :
 But here we will use the third one, which is the popular method
 > The virtual installation offers you the freedom to run Linux on an existing operating system already installed on your computer
  
-So, now start with download and Install Virtual Box:
+**Part(A)_ start with download and Install Virtual Box:**
 1. > Download Virtual box by using this link [https://www.virtualbox.org/wiki/Downloads](url) 
 2.  click the Windows hosts link and save the installers on your Windows 10 device
 
@@ -20,6 +20,9 @@ So, now start with download and Install Virtual Box:
 3. After launch the installer, use the default settings selection, and click the Next button every time
 4. Then, click the Yes button to confirm the virtual network adapter install warning on Windows 10
 5. In the end, Click the Finish button
+
+**Part(B)_ Download Ubuntu 22.04.1** 
+> use this link [https://ubuntu.com/download/desktop](url), then click the grean button to dawnload ubuntu
 
 
 
