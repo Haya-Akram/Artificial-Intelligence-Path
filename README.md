@@ -24,6 +24,18 @@ But here we will use the third one, which is the popular method
 **Part(B)_ Download Ubuntu 22.04.1** 
 > use this link [https://ubuntu.com/download/desktop](url), then click the grean button to dawnload ubuntu
 
+**Part(C)_ Create a virtual machine in Virtual Box**
+1. click on new button
+
+![new](https://user-images.githubusercontent.com/109688460/185019449-74bf104c-8523-47dc-8564-44c881eb510b.PNG)
+
+2. Identify the name you want to use , and the operating system type with version
+3. Set the Memory size to the end of the green bar and click Next
+4.  Create a virtual hard drive 
+5. After launching the virtual machine, click browse and choose the Ubuntu image then click Start.
+![start](https://user-images.githubusercontent.com/109688460/185020879-37443f00-549f-46e2-b2c1-60e7bff0a6a2.PNG)
+
+6. Click Install Ubuntu then continue, and Wait for the installation to finish.
 
 
 
