@@ -56,7 +56,7 @@ But here we will use the third one, which is the popular method
                 - To make it take effect run : `source ~/.bashrc`
  **if you want to verify if ROS Noetic is installed successfully, run** `$ roscd`
 6. >  **install** dependencies for building ROS packages, by run: `sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential`
-7. > In the end : initialize rosdep through these commands:  `sudo rosdep init` , then `rosdep update`
+7. > **In the end** : initialize rosdep through these commands:  `sudo rosdep init` , then `rosdep update`
 
 
 
