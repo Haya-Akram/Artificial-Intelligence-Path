@@ -21,7 +21,7 @@ But here we will use the third one, which is the popular method
 4. Then, click the Yes button to confirm the virtual network adapter install warning on Windows 10
 5. In the end, Click the Finish button
 
-**Part(B)_ Download Ubuntu 22.04.1** 
+**Part(B)_ Download Ubuntu 20.04 LTS** 
 > use this link [https://ubuntu.com/download/desktop](url), then click the grean button to dawnload ubuntu
 
 **Part(C)_ Create a virtual machine in Virtual Box**
@@ -37,7 +37,26 @@ But here we will use the third one, which is the popular method
 
 6. Click Install Ubuntu then continue, and Wait for the installation to finish.
 
+**Part(D)_Install ROS Noetic on Ubuntu 20.04 LTS**
 
+![ros2](https://user-images.githubusercontent.com/109688460/185266060-911dde97-8943-4325-a40d-32478767b52a.PNG)
+
+1. >  **Add** the official ROS Noetic repository to Ubuntu 20.04 sources list file, by use this command : `echo "deb http://packages.ros.org/ros/ubuntu focal main" | sudo tee /etc/apt/sources.list.d/ros-focal.list`
+2. > **Add** the official ROS keyring and add it locally , if you haven't installed curl, start with this command : `sudo apt install curl` 
+    > Then use : `curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -` 
+    >  If the output is (OK), that means the key is successfully added 
+    > ![sudo2](https://user-images.githubusercontent.com/109688460/185267841-1189061d-c95e-4d33-ac86-acd53511330a.PNG)
+
+3. > Use: `sudo apt update` to **update** the ROS package index
+4. > **Install** ros-noetic-desktop-full ( which includes all the desktop packages), by run `sudo apt install ros-noetic-desktop-full`
+5. > **Set up** ROS Noetic environment with these commands :  
+                -  `source /opt/ros/noetic/setup.bash`
+                -  `echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc`
+                - `tail ~/.bashrc`
+                - To make it take effect run : `source ~/.bashrc`
+ **if you want to verify if ROS Noetic is installed successfully, run** `$ roscd`
+6. >  **install** dependencies for building ROS packages, by run: `sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential`
+7. > In the end : initialize rosdep through these commands:  `sudo rosdep init` , then `rosdep update`
 
 
 
